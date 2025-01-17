@@ -1,0 +1,63 @@
+/* Calculator Container */
+.calculator {
+  max-width: 360px;
+  height: auto;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 20px;
+  background: #333333;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Display */
+.display {
+  font-size: 2.5rem;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #4b4b4b;
+  border-radius: 10px;
+  color: white;
+  text-align: right;
+  overflow-x: auto;
+}
+
+/* Button Panel Grid Layout */
+.button-panel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 10px;
+}
+
+/* Button Styles */
+.button {
+  font-size: 1.5rem;
+  padding: 15px;
+  border: none;
+  border-radius: 50%; /* Circular buttons */
+  background: #606060;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.button:hover {
+  background: #757575;
+}
+
+/* Operator Buttons */
+.button:nth-child(4n) { /* Operators (/, *, -, +, =) */
+  background: #ff9500; /* Orange color for operators */
+}
+
+/* AC Button */
+.button:nth-child(17) { /* AC Button */
+  grid-column: span 4; /* Spans the entire row */
+  background: #d9534f; /* Red color for AC */
+  color: white;
+  border-radius: 10px;
+}
+
+.button:nth-child(17):hover {
+  background: #c12e2a;
+}
