@@ -2,7 +2,7 @@
   "name": "calculator-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://https://benharkumar11.github.io/calculator-app",
+  "homepage": "https://benharkumar11.github.io/calculator-app",
   "dependencies": {
     "cra-template": "1.2.0",
     "react": "^19.0.0",
