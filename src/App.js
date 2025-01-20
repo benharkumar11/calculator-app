@@ -11,7 +11,7 @@ const App = () => {
       setInput("0");
     } else if (buttonName === "=") {
       try {
-        setInput(eval(input).toString()); // Avoid eval in production
+        setInput(eval(input).toString());
       } catch {
         setInput("Error");
       }
